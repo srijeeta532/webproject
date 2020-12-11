@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width ,initial-scale=1">
+  <link rel="shortcut icon" href="Itzikgur-My-Seven-Graphics-Painting.ico" />
+
+  <title>Srijeeta</title>
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <style>
+    .contentholder {
+      width: 960px;
+      margin: 0 auto;
+      padding: 10px 25px;
+      border: 2px solid #ccc;
+      background-image: url("abstract.jpg");
+    }
+
+    .contentholder2 {
+      width: 960px;
+      margin: 0 auto;
+      padding: 10px 25px;
+      border: 2px solid #ccc;
+      background-image: url("abst4.jpg");
+    }
+  </style>
+
+</head>
+
+
+<body class="container">
+  <div class="contentholder">
+    <!--<center><p class="ac"><h1><em>Chowdhury.com</em></h1></p></center>-->
+    <center>
+      <h1><em>Techno.com</em></h1>
+      </p>
+    </center>
+    </hr>
+    <center>
+      <div id="navpanel">
+        <!--<p><h3 style="color:green"><strong>HOME||<a class="all" href="administration.html">ADMINISTRATION</a>||<a class="all" href="notices.html">NOTICE</a>||<a id="sp" href="http://google.com">REFERENCES</a>||<a class="all" href="contacts.html">CONTACT US</a></strong></h3></p>
+-->
+
+        <ul>
+          <li>HOME</li>
+          <a class="all" href="administration.html">
+            <li>ADMINISTRATION</li>
+          </a>
+          <a class="all" href="notices.html">
+            <li>NOTICE</li>
+          </a>
+          <li>REFERENCES
+            <ul>
+              <a class="sp" href="http://google.com">
+                <li>GOOGLE</li>
+              </a>
+              <a class="sp" href="http://bing.com">
+                <li>BING</li>
+              </a>
+              <a class="sp" href="http://yahoo.com">
+                <li>YAHOO</li>
+              </a>
+
+            </ul>
+          </li>
+
+          <a class="all" href="contacts.html">
+            <li>CONTACT US</li>
+          </a>
+        </ul>
+
+      </div>
+
+      </hr>
+
+      <audio id="myAudio">
+        <source src="despacito.ogg" type="audio/ogg">
+        <source src="despacito.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <marquee><mark id="mark">welcome</mark></marquee>
+
+      <div id="boxaud">
+        <p id="parastart">
+        <h3>Click the buttons to play or pause the audio.</h3>
+        </p>
+
+        <button onclick="playAudio()" type="button" class="test"><b>Play Audio</b></button>
+        <button onclick="pauseAudio()" type="button" class="test"><b>Pause Audio</b></button></br></br>
+      </div>
+
+      <script>
+        var x = document.getElementById("myAudio");
+        x.volume = 1;
+        function playAudio() {
+          x.play();
+
+        }
+
+        function pauseAudio() {
+          x.pause();
+        } 
+      </script>
+
+      <p>Click the buttons to play or pause the Video.</p>
+
+      <button onclick="playVid()" type="button">Play Video</button>
+      <button onclick="pauseVid()" type="button">Pause Video</button><br>
+
+      <div class="box">
+
+        <video id="myVideo" background-color="white" margin="10px" width="720" height="540" show controls
+          poster="amig.jpg">
+
+          <source src="vid2.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+  </div>
+  <div class="contentholder2">
+    <center>
+      <p>Click on the image to learn more..</p>
+    </center>
+    <center><a href="first.html"><img src="ITS ME/1.jpg" width="180" height="410"></a></center>
+
+    <script>
+      var vid = document.getElementById("myVideo");
+
+      function playVid() {
+        vid.play();
+      }
+
+      function pauseVid() {
+        vid.pause();
+      } 
+    </script>
+
+    <p>Video courtesy of <a href="http://www.youtube.com" target="_blank">showing ARMAAN(Youtube)</a>.</p>
+    <center>
+      <div title="Meet the DEVELOPER">
+
+        <img src="ITS ME/1.jpg" width="150px" height="300px">
+        <img src="ITS ME/4.jpg" width="150px" height="300px">
+        <img src="ITS ME/3.jpg" width="150px" height="300px">
+        <img src="ITS ME/5.jpg" width="150px" height="300px">
+      </div>
+      <p title="ITS Beauty CREATION"><img src="ART.jpg" width="700px" height="100px">
+    </center>
+
+    </p>
+
+    <center><a href="#"><Button type="button" id="baktotop">Back to Top</Button></a></center>
+
+    </center>
+  </div>
+
+  <footer>
+    <center>
+      <p id="acw">techno.com</p>
+    </center>
+    <center><mark>
+        <p><a href="policies.html">Privacy Policy||Terms of use.</a></p>
+      </mark></center>
+    <center>
+      <p>copyright 2000-2017 by Srijeeta.All Rights Reserved.</p>
+    </center>
+  </footer>
+
+</body>
+
+
+</html>
